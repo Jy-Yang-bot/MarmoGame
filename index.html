@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Identification Task</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- START SCREEN -->
+    <div id="startScreen">
+
+        <h1>Animal Identification Task</h1>
+
+        <p>Enter Participant ID:</p>
+
+        <input type="text"
+               id="participantName"
+               placeholder="e.g. jiayue">
+
+        <br><br>
+
+        <button onclick="startExperiment()">
+            Start
+        </button>
+
+    </div>
+
+    <!-- EXPERIMENT SCREEN -->
+    <div id="experimentScreen"
+         style="display:none;">
+
+        <h2 id="trialCounter"></h2>
+
+        <video id="videoPlayer"
+               width="750"
+               controls
+               preload="auto">
+        </video>
+
+        <div id="choices"></div>
+
+    </div>
+
+    <!-- END SCREEN -->
+    <div id="endScreen"
+         style="display:none;">
+
+        <h1>Thank you for your help and time!</h1>
+
+        <p>We got your responses submitted...</p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
